@@ -1,0 +1,25 @@
+div{
+    font: 1.5em normal arial;
+    border: 3px solid rgb(148, 148, 148);
+    border-radius: 7px;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+div:hover{
+    border-color: red;
+}
+.c1{
+    background-color: lightgray;
+}
+.c2{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+.destaque{
+    background-color: black;
+    color: white;
+    border-color: red;
+}

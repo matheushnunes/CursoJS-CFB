@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+#d1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 120px;
+}
+p.dados{
+    display: flex;
+    flex-direction: column;
+}
+p.dados input{
+    background-color: rgb(65, 65, 65);
+    border: none;
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 2px;
+    color: white;
+}
+p#tipo{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+button{
+    background-color: rgb(103, 77, 255);
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+}
+p#res{
+    border: 1px solid white;
+    margin: 5px;
+    min-height: 20px;
+    min-width: 120px;
+}
+.carro{
+    display: flex;
+    background-color: rgb(103, 77, 255);
+    color: black;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px;
+}
+.excluir{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: right;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}

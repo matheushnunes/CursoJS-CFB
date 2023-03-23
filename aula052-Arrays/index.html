@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        div#caixa{
+            border: 2px solid white;
+            width: 150px;
+            min-height: 50px;
+            border-radius: 5px;
+            text-indent: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+
+    </div>
+
+    <script>
+        const caixa = document.querySelector('#caixa')
+        const numeros = [12,41,21,['doze','quarenta e um','vinte e um']]
+        const array = ['HTML','CSS','JavaScript',numeros]
+        console.log(array[3][3][2])
+        array.map((e)=>{
+            let p = document.createElement('p')
+            p.innerHTML = e
+            caixa.appendChild(p)
+        })
+        
+        
+    </script>
+</body>
+</html>

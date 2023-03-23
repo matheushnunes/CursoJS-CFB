@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleção map</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        div#caixa{
+            border: 2px solid white;
+            width: 150px;
+            min-height: 50px;
+            border-radius: 5px;
+            text-indent: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+
+    </div>
+
+    <script>
+        const caixa = document.querySelector('#caixa')
+        
+        const mapa = new Map()
+        mapa.set('curos','CSS')
+        mapa.set(1,512)
+        mapa.set('num',23)
+        mapa.set(2,'dois')
+        //chave + valor
+        //tanto o valor quanto a chave podem ser string ou numero
+        let res = ''
+        let pesq = 2
+        if(mapa.has(pesq)){
+            //se tiver um item com a chave 2 no 'mapa' retorna 'true'
+            //se não tiver retorna 'false' 
+            res = `Item ${mapa.get(pesq)} encontrado`
+            //imprime o valor que esta na chave '2'
+        }else{
+            res = 'Item não encontrado'
+        }
+        caixa.innerHTML = res + '</br>'
+        caixa.innerHTML += `tamanho do Map: ${mapa.size}`
+
+        mapa.forEach((e)=>{
+            console.log(e)
+        })
+        
+    </script>
+</body>
+</html>

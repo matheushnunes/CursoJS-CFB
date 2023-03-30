@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*{
+    border: none;
+    padding: 0px;
+    margin: 0xp;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100%;
+    position: absolute;
+}
+.olhos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 400px;
+    height: 200px;
+    
+}
+.olho{
+    width: 200px;
+    height: 200px;
+    transform-origin: center center;
+    position: relative;
+    top: 50%;
+}

@@ -10,8 +10,8 @@
     justify-content: flex-start;
     align-items: stretch;
     width: 100%;
-    background-color: #818181;
-    border: 2px solid rgb(78, 78, 78);
+    background-color: #eee;
+    border: 2px solid black;
     border-radius: 5px;
 }
 .controle{
@@ -46,8 +46,8 @@ input[type='number'], #num_objetos{
     min-height: 100vh;
     min-height: fill-available;
     min-height: -webkit-fill-available;
-    background-color: #161616;
-    border: 2px solid rgb(102, 102, 102);
+    background-color: #eee;
+    border: 2px solid black;
     border-radius: 5px;
     position: absolute;
     overflow: hidden;

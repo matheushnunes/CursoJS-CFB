@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div#tabela{
+    margin: 10px;
+}
+table{
+    border: 1px solid black;
+}
+table,td,th{
+    border: 1px solid rgb(129, 129, 129);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 4px;
+}
+button{
+    border: none;
+    background-color: lightgray;
+    width: 60px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}

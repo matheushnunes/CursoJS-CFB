@@ -14,7 +14,12 @@ p_array.innerHTML = '['+array+']'
             atu.push(atual)
             dob.push(atual*2)
             ret.push(retorno)
+            console.log(retorno)
+            console.log(atual)
+            console.log(pos)
+            console.log('-------------------')
             return retorno+atual
+           
         })
         res.innerHTML = '</br>'+arr+'</br>'+atu+'</br>'+dob+'</br>'+ret+'</br>'
     })

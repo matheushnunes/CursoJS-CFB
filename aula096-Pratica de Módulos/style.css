@@ -36,16 +36,26 @@ div#form button{
     background-color: rgb(199, 199, 199);
 }
 div#res{
+    display: flex;
+    flex-wrap: wrap;
     border: 2px solid gray;
     border-radius: 5px;
     margin: 5px;
-    width: 200px;
+    min-width: 200px;
 }
 .contato{
-    display: flex;
-    flex-direction: column;
     border: 1px solid black;
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
+}
+div#res p {
+    display: flex;
+}
+.lixeira{
+    cursor: pointer;
+    background-color: rgb(255, 177, 177);
+    border-radius: 5px;
+    margin-left: auto;
+    width: 15px;
 }

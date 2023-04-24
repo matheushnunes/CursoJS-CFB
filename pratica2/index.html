@@ -1,48 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>animação</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="d1">
-        <p class="dados">
-            <label for="Nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
-        </p>
-        <p class="dados">
-            <label for="porta">Portas:</label>
-            <input type="number" name="porta" id="porta">
-        </p>
-        <p class="dados">
-            <label for="munição">Munição:</label>
-            <input type="number" name="munição" id="munição" disabled>
-        </p>
-        <p class="dados">
-            <label for="blindagem">Blindagem:</label>
-            <input type="number" name="blindagem" id="blindagem" disabled>
-        </p>
-        <p id="tipo">
-            tipo
-            <p>
-                <input type="radio" name="tipo" id="normal" checked>
-                <label for="normal">Normal</label>
-            </p>
-            <p>
-                <input type="radio" name="tipo" id="militar">
-                <label for="militar">Militar</label>
-            </p>
-        </p>
-        <p>
-            <button>Verificar</button>
-        </p>
-        <p id="res">
-
-        </p>
+    <div id="controles">
+        <button id="btn_esquerda" class="btn">&lt;-</button>
+        <button id="btn_direita" class="btn">-&gt;</button>
+        <button id="btn_parar" class="btn">Parar</button>
     </div>
+    <div id="carro"></div>
+    <script src="js.js"></script>
 </body>
-<script src="js.js"></script>
 </html>

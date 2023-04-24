@@ -1,61 +1,26 @@
 *{
-    margin: 0px;
+    border: none;
+    box-sizing: border-box;
     padding: 0px;
+    margin: 0px;
 }
 body{
-    background-color: rgb(32, 32, 32);
-    color: white;
+    background-color: rgb(26, 26, 26);
 }
-#d1{
-    display: flex;
-    flex-direction: column;
+div#controles{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(97, 97, 97);
+}
+button.btn{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(170, 170, 170);
+    border-radius: 10px;
     margin: 10px;
-    width: 120px;
 }
-p.dados{
-    display: flex;
-    flex-direction: column;
-}
-p.dados input{
-    background-color: rgb(65, 65, 65);
-    border: none;
-    width: 120px;
-    height: 20px;
-    border-radius: 5px;
-    margin: 2px;
-    color: white;
-}
-p#tipo{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-}
-button{
-    background-color: rgb(103, 77, 255);
-    width: 120px;
-    height: 20px;
-    border-radius: 5px;
-}
-p#res{
-    border: 1px solid white;
-    margin: 5px;
-    min-height: 20px;
-    min-width: 120px;
-}
-.carro{
-    display: flex;
-    background-color: rgb(103, 77, 255);
-    color: black;
-    border-radius: 5px;
-    padding: 3px;
-    margin: 5px;
-}
-.excluir{
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    justify-content: right;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
+#carro{
+    background-color: rgb(44, 44, 143);
+    border-radius: 4px;
+    margin-top: 3px;
 }

@@ -1,14 +1,14 @@
-import { Ncontato } from "./contatos.js"
-const btn = document.querySelector('#btn')
-
-btn.addEventListener('click',()=>{
-    const contato = {
-      nome: document.querySelector('#nome').value,
-      tel: document.querySelector('#tel').value,
-      email: document.querySelector('#email').value
+function steamrollArray(arr) {
+  let Narr = []
+  for(let a in arr){
+    if(Array.isArray(arr[a])){
+      Narr.push(...steamrollArray(arr[a]))
+    }else{
+      Narr.push(arr[a])
+    }
   }
-  Ncontato(contato)
   
+  return Narr;
+}
 
-})
-
+steamrollArray([1, [2], [3, [[4]]]]);

@@ -1,19 +1,30 @@
 const nome = document.querySelector('#nome')
 const nota = document.querySelector('#nota')
-const f_msg = document.querySelector('#f_msg')
+let f_msg = document.querySelector('#f_msg')
 
 document.querySelector('#btn_validar').addEventListener('click',(e)=>{
-   let msg = null
+    e.preventDefault()
+    let msg = null
+
     if(nota.validity.valueMissing){
-        msg = 'esse campo é obrigatório'
-        console.log('1')
-    }else if(nota.validity.rangeOverFlow){
-        msg = 'nota menor que 0'
-        console.log('2')
-    }else if(nota.validity.rangeUnderFlow){
-        msg = 'nota maior que 10'
-        console.log('3')
+        msg = 'Este campo é obrigatorio!'
+    }else if(nota.validity.rangeOverflow){
+        msg = 'Nota muito alta'
+    }else if(nota.validity.rangeUnderflow){
+        msg = 'Nota muito baixa'
     }
-    f_msg.innerHTML =  msg
-    e.preventDefault()//não permite o envio do formulario
+    f_msg.innerHTML = msg
+
+    let estadoValidação = nota.validity
+    console.log(estadoValidação)
+
+    // if(estadoValidação.valueMissing){
+    //    nota.setCustomValidity('Este campo é obrigatorio!')
+    // }else if(estadoValidação.rangeOverflow){
+    //     nota.setCustomValidity('Nota muito alta!')
+    // }else if(estadoValidação.rangeUnderflow){
+    //     nota.setCustomValidity('Nota muito baixa')
+    // }
+    // nota.reportValidity()
+    // // f_msg.innerHTML = nota.validationMessage
 })

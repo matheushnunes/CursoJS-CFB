@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(86, 117, 86);
+}
+#divTimer{
+    width: 530px;
+    margin: 10px;
+}
+#timer{
+    width: 500px;
+    height: 100px;
+    background-color: black;
+    color: rgb(0, 255, 0);
+    text-align: center;
+    padding: 10px;
+    font: 100px 'Courier New', Courier, monospace;
+    border: 5px solid gray;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.301);
+}
+.btn{
+    background-color: rgb(196, 196, 196);
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+div#botões{
+    width: 100%;
+    margin: 10px;
+}
+#parcial{
+    width: 70px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 3px;
+    background-color: rgb(196, 196, 196);
+}

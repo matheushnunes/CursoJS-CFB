@@ -12,6 +12,7 @@ class Login{
         img:'../imagens/logo-html.png'
     };
     static endpoint = 'https://login--matheushenri348.repl.co';
+    
     static Login =(callbackTrue, callbackFalse, config = null)=>{
         if(config!=null){
             this.config = config;
@@ -149,4 +150,4 @@ class Login{
         fundoLogin.remove();
     }
 }
-export {Login};
+// export {Login};

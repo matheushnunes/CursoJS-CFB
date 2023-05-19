@@ -9,10 +9,9 @@ class Login{
     static callbackFalse = null;
     static config = {
         cor:'048',
-        img:'../imagens/logo-html.png'
+        img:'../imagens/logo-html.png',
+        endpoint:null //https://login--matheushenri348.repl.co
     };
-    static endpoint = 'https://login--matheushenri348.repl.co';
-    
     static Login =(callbackTrue, callbackFalse, config = null)=>{
         if(config!=null){
             this.config = config;
@@ -117,23 +116,23 @@ class Login{
         let mat = document.querySelector('#f_username').value;
         let pas = document.querySelector('#f_senha').value;
 
-        const endpoint = `https://login--matheushenri348.repl.co/?matricula=${mat}&senha=${pas}`
+        const endpoint = `${this.config.endpoint}/?matricula=${mat}&senha=${pas}`
         fetch(endpoint)
         .then(res => res.json())
         .then(res => {
             if(res){
-                this.logado = true;
-                this.matLogado = mat;
-                this.nomeLogado = res.nome;
-                this.acessoLogado = res.acesso;
+                sessionStorage.setItem('logado','true');
+                sessionStorage.setItem('matlogado',mat);
+                sessionStorage.setItem('nomelogado',res.nome);
+                sessionStorage.setItem('acessologado',res.acesso);
                 this.callbackTrue()
                 this.fechar();
             }else{
-                this.logado = false;
-                this.matLogado = null;
-                this.nomeLogado = null;
-                this.acessoLogado = null;
-                this.callbackFalse();
+                sessionStorage.setItem('logado','false');
+                sessionStorage.setItem('matlogado','');
+                sessionStorage.setItem('nomelogado','');
+                sessionStorage.setItem('acessologado','');
+                this.callbackFalse()
             }
         })
         // if(mat == '123' && pas == '321 '){

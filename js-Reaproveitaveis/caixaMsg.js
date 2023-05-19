@@ -117,4 +117,3 @@ class Cxmsg{
         this.divMsg.remove()
     }
 }
-export {Cxmsg}

@@ -1,3 +1,6 @@
+import { Cxmsg } from "../js-Reaproveitaveis/caixaMsg.js"
+
+Cxmsg.config({cor:'rgb(86, 117, 86)'})
 const timer = document.querySelector('#timer')
 const btn_iniciar = document.querySelector('#btn_iniciar')
 const btn_parar = document.querySelector('#btn_parar')
@@ -7,7 +10,7 @@ const parciais = document.querySelector('#parciais')
 const parcial = document.querySelector('#parcial')
 
 let intervalo = null
- 
+let tmpIni
 const contador = ()=>{
     const tmpAtual = Date.now()    
     let seg = Math.floor((tmpAtual - tmpIni)/1000)
@@ -38,12 +41,13 @@ btn_zerar.addEventListener('click',(e)=>{
     }
     tmpIni = Date.now()  
     timer.innerHTML = '00:00:00'
+    Cxmsg.mostrar('Cronômetro','Cronômetro zerado')
 })
 btn_parcial.addEventListener('click',(e)=>{
     const timer = document.querySelector('#timer').textContent
     let p = document.createElement('p')
     p.setAttribute('id','parcial')
     p.innerHTML = timer
-    parciais.appendChild(p)
+    parciais.prepend(p)
 })  
 

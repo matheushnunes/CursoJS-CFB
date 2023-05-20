@@ -120,6 +120,7 @@ class Login{
         fetch(endpoint)
         .then(res => res.json())
         .then(res => {
+            console.log(res)
             if(res){
                 sessionStorage.setItem('logado','true');
                 sessionStorage.setItem('matlogado',mat);

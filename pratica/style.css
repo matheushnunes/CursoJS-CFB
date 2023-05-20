@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#fundoLogin{
+    display: ;
+    width: 100vw;
+    height: 100hv;
+    background-color: rgba(0, 0, 0, 0.63);
+}

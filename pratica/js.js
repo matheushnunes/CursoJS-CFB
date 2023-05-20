@@ -1,4 +1,4 @@
-import { Login } from "./loginPratica.js"
+// import { Login } from "./loginPratica.js"
 import { Cxmsg } from "../js-Reaproveitaveis/caixaMsg.js"
 const callBackTrue = ()=>{
 }

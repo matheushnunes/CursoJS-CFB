@@ -68,8 +68,6 @@ class Login {
     static fecharLogin = ()=>{
        let login = document.querySelector('.fundoLogin')
        login.remove()
-    } 
-
-    
+    }
 }
 // export {Login}

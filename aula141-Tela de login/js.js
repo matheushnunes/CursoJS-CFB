@@ -1,6 +1,5 @@
-import { Login } from "../js-Reaproveitaveis/login.js";
+import { Login } from "./login.js";
 import { Cxmsg } from "../js-Reaproveitaveis/caixaMsg.js"
-
 const callbackTrue = ()=>{
     
 }
@@ -11,4 +10,9 @@ const callbackFalse = ()=>{
     }
     Cxmsg.mostrar(config,'Erro','Login não Efetuado! Usuáiro ou senha incorretos')
 }
-Login.Login(callbackTrue, callbackFalse)
+let config ={
+    endpoint: 'https://login--matheushenri348.repl.co',
+    img: '../imagens/logo-html.png',
+    cor: '000'
+}
+Login.Login(callbackTrue, callbackFalse, config)

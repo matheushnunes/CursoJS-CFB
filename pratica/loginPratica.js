@@ -1,7 +1,7 @@
 class Login {
     static config = {
         cor: '44f',
-        endpoint: 'https://login--matheushenri348.repl.co',
+        endpoint: null,
     }
     static Login = (loginTrue, loginFalse, config)=>{
         const html =

@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+.dgv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.dgvTitulos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: rgb(42, 71, 167);
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+.dgvTitulos div, .dgvLinha div{
+    padding: 5px;
+}
+.dgvDados{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.dgvLinha{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.coluna{
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+}
+.dgvLinha:nth-child(odd){
+    background-color: rgb(172, 172, 172);
+}
+.dgvLinha:nth-child(even){
+    background-color: rgb(212, 212, 212);
+}
+.dgvLinha:hover{
+    background-color: #7bb2e6 !important;
+    color: white !important;
+    cursor: pointer;
+}
+.c1{
+    width: 50px;
+}
+.c2{
+    width: 100px;
+    justify-content: space-around !important;
+}
+.c3{
+    width: 150px;
+}
+.dgvIco{
+    width: 24px;
+}
+.janelaView, .janelaEditar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.75);
+}
+.view{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #aaa;
+    padding: 10px;
+    border-radius: 5px;
+    width: 520px;
+}
+.campo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 500px;
+}
+.campo input{
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+.rodape{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.btn{
+    background-color: #480;
+    color: white;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 5px ;
+    margin: 5px;
+}
+.ocultar{
+    display: none !important;
+}

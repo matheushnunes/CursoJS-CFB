@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        
+        <div id="dgvProdutos" class="dgv">
+            <div id="dgvTitulos" class="dgvTitulos">
+                <div class="c1" id="Titulo_id">Id</div>
+                <div class="c3" id="Titulo_produto">Produto</div>
+                <div class="c3" id="Titulo_marca">Marca</div>
+                <div class="c3" id="Titulo_modelo">Modelo</div>
+                <div class="c2" id="Titulo_funçoes">Funções</div>
+            </div>
+            <div id="dvgDados" class="dvgDados">
+
+            </div>
+        </div>
+        <div id="janelaView" class="janelaView ocultar">
+            <div id="view" class="view">
+                <div class="campo">
+                    <label for="id">ID</label>
+                    <input type="text" name="id" id="idView" readonly>
+                </div>
+                <div class="campo">
+                    <label for="id">Produto</label>
+                    <input type="text" name="id" id="produtoView" readonly>
+                </div>
+                <div class="campo">
+                    <label for="id">Marca</label>
+                    <input type="text" name="id" id="marcaView" readonly>
+                </div>
+                <div class="campo">
+                    <label for="id">Modelo</label>
+                    <input type="text" name="id" id="modeloView" readonly>
+                </div>
+                <div class="campo rodape">
+                    <button id="btn_ok" class="btn">OK</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="janelaEditar" class="janelaEditar ocultar">
+            <div id="view" class="view">
+                <div class="campo">
+                    <label for="id">ID</label>
+                    <input type="text" name="id" id="idEditar">
+                </div>
+                <div class="campo">
+                    <label for="id">Produto</label>
+                    <input type="text" name="id" id="produtoEditar">
+                </div>
+                <div class="campo">
+                    <label for="id">Marca</label>
+                    <input type="text" name="id" id="marcaEditar">
+                </div>
+                <div class="campo">
+                    <label for="id">Modelo</label>
+                    <input type="text" name="id" id="modeloEditar">
+                </div>
+                <div class="campo rodape">
+                    <button id="btn_gravar" class="btn">Gravar</button>
+                    <button id="btn_cancelar" class="btn">Cancelar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script src="js.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <thead id="titulo">
+            <th>Id</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Funções</th>
+        </thead>
+        <tbody id="corpoTabela">
+        
+        </tbody>
+    </table>
+    <div id="janelaView" class="janelaFunçoes ocultar">
+        <div id="divFunçoes" >
+            <p>
+                <label for="id">Id: </label>
+                <input type="text" name="id" id="id">
+            </p>
+            <p>
+                <label for="produto">Produto: </label>
+                <input type="text" name="produto" id="produto">
+            </p>
+            <p>
+                <label for="marca">Marca: </label>
+                <input type="text" name="marca" id="marca">
+            </p>
+            <p>
+                <label for="modelo">Modelo: </label>
+                <input type="text" name="modelo" id="modelo">
+            </p>
+            <p>
+                <button id="btnOk">OK</button>
+            </p>
+        </div>
+    </div>
+    <div id="janelaEditar" class="janelaFunçoes ocultar">
+        <div id="divFunçoes" >
+            <p>
+                <label for="id">Id: </label>
+                <input type="text" name="id" id="idEditar">
+            </p>
+            <p>
+                <label for="produto">Produto: </label>
+                <input type="text" name="produto" id="produtoEditar">
+            </p>
+            <p>
+                <label for="marca">Marca: </label>
+                <input type="text" name="marca" id="marcaEditar">
+            </p>
+            <p>
+                <label for="modelo">Modelo: </label>
+                <input type="text" name="modelo" id="modeloEditar">
+            </p>
+            <p>
+                <button id="btnGravar">Gravar</button>
+                <button id="btnCancelar">Cancelar</button>
+            </p>
+        </div>
+    </div>
+    <script src="js.js" type="module"></script>
+</body>
+</html>

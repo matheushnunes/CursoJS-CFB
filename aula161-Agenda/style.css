@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+/* AUXILIARES */
+.ocultar{
+    display: none !important; 
+}
+/**************/
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(168, 168, 168);
+    width: 100%;
+    height: 100vh;
+}
+.aba{
+    background-color: rgb(61, 28, 151);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+    margin-right: 1px;
+}
+.abaSelecionada{
+    background-color: rgb(178, 156, 240) !important;
+    color: black !important;
+}
+.ifPrincipal{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.btn{
+    background-color: rgb(73, 73, 73);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+}
+/* NOVO */
+body#novo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.elementoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+}
+.btnForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.campoForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.campoForm input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+/********/
+
+/* PESQUISAR */
+
+#pesquisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin: 10px;
+}
+.campoPesq{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+input[type=text]{
+    padding: 5px;
+    border-radius: 5px;
+}
+label{
+    margin-right: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 10px;
+    font-size: 20px;
+    max-width: 800px;
+}
+table thead{
+    background-color: rgb(151, 175, 241);
+}
+table tr,td,th{
+    padding: 6px;
+    border: 1px solid black;
+}
+table tbody{
+    background-color: white;
+}
+tr:hover{
+    background-color: rgb(211, 231, 248);
+}
+.op{
+    text-align: center;
+}
+/*************/
+
+/* GESTÂO */
+
+body.gestao h2{
+    text-align: center;
+}
+
+.iconeOp{
+    width: 25px;
+    cursor: pointer;
+}
+/* pupup editar */
+.fundoPopup{
+    display: flex;
+    width: 100%;
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99999999999;
+}
+.janelaPopup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+.tituloPopup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(61, 28, 151);
+    color: white;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+    width: inherit; /*sege o tamanho do elemento pai */
+}
+.principalPopup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: inherit;
+    background-color: rgb(197, 197, 197);
+    padding: 5px;
+}
+.rodapePopup{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: inherit;
+    background-color: #aaa;
+    border-radius: 0px 0px 5px 5px;
+}
+/***********/
+
+/* FILTRAR */
+
+.filtro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***********/

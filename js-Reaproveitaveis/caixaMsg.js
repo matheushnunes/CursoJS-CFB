@@ -5,7 +5,7 @@ class Cxmsg{
     static tipo = null
     static comandoSN = null
 
-    static mostrar = (config, titulo, texto)=>{
+    static mostrar = (titulo, texto,config={cor:'red',tipo:'ok'})=>{
         this.cor = config.cor
         this.tipo = config.tipo //'ok' ou 'sn' 
         this.comandoSN =()=>{config.comandoSN()}

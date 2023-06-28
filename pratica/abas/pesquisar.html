@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        div#pesq{
+            margin: 5px;
+        }
+        div#pesq p {
+            width: 170px;
+            padding: 5px;
+            border: 1px solid rgb(77, 0, 128);
+            background-color: white;
+            border-radius: 5px;
+        }
+        p#campPesq{
+            width: 400px !important;
+            border: none !important;
+            background-color: transparent !important;
+            display: flex;
+        }
+        p#campPesq input{
+            margin-top: 5px;
+            height: 24px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pesq">
+        <p>
+            <label for="id">Id: </label>
+            <input type="radio" name="pesq" id="id">
+        </p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="radio" name="pesq" id="nome" checked>
+        </p>
+        <p>
+            <label for="celular">Celular:</label>
+            <input type="radio" name="pesq" id="celular">
+        </p>
+        <p>
+            <label for="email">E-Mail:</label>
+            <input type="radio" name="pesq" id="email">
+        </p>
+        <p>
+            <label for="dtNasc">Data de Nascimento:</label>
+            <input type="radio" name="pesq" id="dtNasc">
+        </p>
+        <p id="campPesq">
+            <button id="btnPesq" class="btnPadrao">Pesquisar</button>
+            <input type="text" name="pesqTxt" id="pesqTxt">
+        </p>
+        
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Nome</td>
+                    <td>Celular</td>
+                    <td>E-Mail</td>
+                    <td>Data de Nascimento</td>
+                </tr>
+            </thead>
+            <tbody id="tbodyRes">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="pesquisar.js"></script>
+</body>
+</html>

@@ -81,6 +81,7 @@ const removerContato = (id)=>{
 btnFiltrar.addEventListener('click',(e)=>{
     if(f_filtroNome.value == ''){
         PreencherDados('http://127.0.0.1:1880/pesquisarcontatos');
+        console.log('ok')
     }else{
         PreencherDados(`http://127.0.0.1:1880/filtrar/${f_filtroNome.value}`);
     }

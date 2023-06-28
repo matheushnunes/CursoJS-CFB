@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="../imagens/logo-black-freeCodeCamp.png" alt="logo-freeCodeCamp">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <a href="#student-info">INFO</a>
+            <a href="#questions-html">HTML</a>
+            <a href="#questions-css">CSS</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <section id="student-info" class="student-info" role="region" aria-labelledby="student-info">
+                <h1>Student Info</h1>
+                <fieldset>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="DOB">D.O.B.<span class="sr-only">(Date of birth)</span></label>
+                        <input type="date" name="DOB" id="DOB">
+                    </div>
+                </fieldset>
+            </section>
+            <section id="questions-html" class="questions-html" role="region" aria-labelledby="html-questions">
+                <h1>HTML</h1>
+                <fieldset>
+                    <div id="question1" class="question">
+                        <h2>Question #1</h2>
+                        <p>The legend element represents a caption for the content of its parent fildset element</p>
+                        <div class="radios-html">
+                            <label for="true1">
+                                <input type="radio" name="question1" id="true1">
+                                True
+                            </label>
+                            <label for="false1">
+                                <input type="radio" name="question1" id="false1">
+                                False
+                            </label>
+                        </div>
+                    </div>
+                    <div id="question2" class="question">
+                        <h2>Question #2</h2>
+                        <p>A label element nesting an input element is required to have a for attribute with the same value as the input's id</p>
+                        <div class="radios-html">
+                            <label for="true2">
+                                <input type="radio" name="question2" id="true2">
+                                True
+                            </label>
+                            <label for="false2">
+                                <input type="radio" name="question2" id="false2">
+                                False
+                            </label>
+                        </div>
+                    </div>
+                </fieldset> 
+            </section>
+            <section id="questions-css" class="questions-css" role="region" aria-labelledby="css-questions">
+                <h2>CSS</h2>
+                <fieldset>
+                    <label for="select">
+                        Are you a frontend developer?
+                        <select name="select" id="select">
+                            <option value="
+                            ">Select an option</option>
+                            <option value="yes">yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </label>
+                    <label for="text-area">
+                        Do you have any questions:
+                        <textarea name="text-area" id="any-question" cols="10" rows="5"></textarea>
+                    </label>
+                </fieldset>
+            </section>
+            <input type="submit" value="Send">
+        </form>
+    </main>
+    <footer>
+        <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a>
+        <p>San Francisco</p>
+        <p>California</p>
+        <p>USA</p>
+    </footer>
+</body>
+</html>

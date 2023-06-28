@@ -15,6 +15,7 @@ const PreencherDados = ()=>{
     fetch(endpoint)
     .then(res => res.json())
     .then(res =>{
+        console.log(res)
         res.forEach((e) => {
             //criação da tabela
             const tr = document.createElement('tr')

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body{
+            margin: 5px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+        }
+        input{
+            border-radius: 5px;
+            width: 350px;
+            height: 20px;
+            margin-bottom: 8px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        section#btns{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #fundoJanelaEditar{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.582);
+            justify-content: center;
+            align-items: center;
+        }
+        #janelaEditar{
+            width: 400px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid ;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Nome</td>
+                <td>Celular</td>
+                <td>E-Mail</td>
+                <td>Data de Nascimento</td>
+                <td>Operações</td>
+            </tr>
+        </thead>
+        <tbody id="tbodyRes">
+            
+        </tbody>
+    </table>
+    <div id="fundoJanelaEditar" class="ocultar">
+        <div id="janelaEditar">
+            <section>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="celular">Celular</label>
+                <input type="text" name="celular" id="celular">
+                <label for="email">E-Mail</label>
+                <input type="text" name="email" id="email">
+                <label for="dtNasc">Data de Nascimento</label>
+                <input type="text" name="dtNasc" id="dtNasc">
+            </section>
+            <section id="btns">
+                <button id="btnGravar" class="btnPadrao">Gravar</button>
+                <button id="btnCancelar"class="btnPadrao">Cancelar</button>
+            </section>
+        </div>
+    </div>
+    <script src="gestao.js"></script>
+</body>
+</html>

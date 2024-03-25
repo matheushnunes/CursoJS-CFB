@@ -31,7 +31,7 @@ const RadioSelecionado = ()=>{
         let radioSelecionado = todosRadios.filter((e)=>{
             return e.checked
         })
-        return radioSelecionado[0]
+        return radioSelecionado[0] 
     }catch{
         alert('Selecione um curso')
     }

@@ -1,82 +1,10 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    border: none;
-}
-::-webkit-scrollbar{
-    display: none;
-}
-.ocultar{
-    display: none !important;
-}
-body{
-    width: 100vw;
-    height: 100vh;
-}
-header{
-    background-color: rgb(185, 188, 235);
-    height: 80px;
-    box-shadow:  1px 2px hsla(0, 0%, 0%, 0.185);
-}
-header h1{
-    font: 34px bold Times serif;
-    text-align: center;
-    padding: 5px;
-}
-header nav{
-    height: 31px;
-}
-header button.btnAba{
-    font-family:Arial, Helvetica, sans-serif, Courier, monospace;
-    color: white;
-    background-color: rgb(84, 14, 216);
-    height: 100%;
-    padding: 5px;
-    border-radius: 5px 5px 0px 0px;
-    cursor: pointer;
-}
-.abaSelecionada{
-    background-color: rgb(142, 88, 243) !important;
-    color: rgb(255, 255, 255) !important;
-}
-main#principal{
-    width: 100%;
-    height: calc(100% - 84px);
-}
-.frameJanela{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(214, 214, 214);
-}
-.btnPadrao{
-    width: 100px;
-    background-color: rgb(142, 88, 243);
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
+div#tabela {
 }
 table{
     border-collapse: collapse;
-    margin: 5px;
 }
-td, tr{
-    border: 1px solid black;
-    padding: 5px;
-}
-thead{
-    background-color: rgb(84, 14, 216);
-    color: white;
-}
-tbody{
-    background-color: white;
-}
-.op{
+tr, td {
     text-align: center;
-}
-.ico{
-    width: 25px;
-    cursor: pointer;
+    border: 1px solid black;
+    padding: 4px;
 }

@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratica Agenda</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Agenda</h1>
-        <nav id="menuAbas">
-            <button id="btnInicio" class="btnAba">INICIO</button>
-            <button id="btnNovo" class="btnAba">NOVO</button>
-            <button id="btnPesquisar" class="btnAba ">PESQUISAR</button>
-            <button id="btnFiltrar" class="btnAba ">FILTRAR</button>
-            <button id="btnGestao" class="btnAba">GESTÃO</button>
-        </nav>
-    </header>
-    <main id="principal">
-        <iframe src="./abas/gestao.html" name="frameJanela" id="frameJanela" class="frameJanela"></iframe>
-    </main>
-    <script src="js.js"></script>
-
+  <div id="tabela">
+    <table style="display: flex; flex-direction: column;">
+      <thead>Notas</thead>
+      <tbody>
+        <tr>
+          <td>Aluno1:</td>
+          <td>300</td>
+          <td>520</td>
+          <td>140</td>
+          <td>900</td>
+        </tr>
+        <tr>
+          <td>Aluno2:</td>
+          <td>520</td>
+          <td>230</td>
+          <td>610</td>
+          <td>600</td>
+        </tr>
+        <tr>
+          <td>Aluno3:</td>
+          <td>451</td>
+          <td>532</td>
+          <td>124</td>
+          <td>324</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button id="print">imprimir</button>
+  <script type="module" src="js.js"></script>
 </body>
 </html>

@@ -21,11 +21,9 @@ const c1 = Object.assign({},pc)
 c1.info()
 
 const c2 = Object.create(pc)
-c2.cpu = 'pentium'
-c2.ram = '8gb'
-c2.hd = '256gb'
-c2.info()
+console.log(c2.cpu)
 
+c2.info()
 
 const o1 = {objt1: '1'}
 const o2 = {objt2: '2'}

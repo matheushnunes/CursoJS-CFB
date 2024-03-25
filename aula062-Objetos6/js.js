@@ -39,7 +39,6 @@ m1.atirar()
 m1.atirar()
 m1.atirar()
 
-
 console.log(`Nome.......:${c1.nome}`)
 console.log(`Portas.....:${c1.portas}`)
 console.log(`ligado.....:${c1.ligado}`)

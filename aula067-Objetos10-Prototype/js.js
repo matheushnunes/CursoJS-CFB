@@ -7,14 +7,12 @@ const n1 = new Nave(100)
 
 Nave.prototype.vidas = 3
 Nave.prototype.disparar = function(){
+    console.log(this.disparos)
     if(this.disparos > 0){
         this.disparos--
     }
 }
 
-n1.disparar()
-n1.disparar()
-n1.disparar()
 n1.disparar()
 n1.disparar()
 n1.disparar()

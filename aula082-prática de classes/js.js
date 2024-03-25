@@ -9,7 +9,6 @@ let alturaPalco = palco.offsetHeight //pega o tamanho do palco
 let bolas = []
 let numBola = 0
 
-
 class Bola{
     constructor(arryBolas,palco){
         this.tam = Math.floor(Math.random()*15)+10 //tamaho da bola

@@ -10,7 +10,7 @@ function aluno(nome,nota){
         },2000) //2segundos
     }
 
-    this.dadosArrow = function(){
+    this.dadosArrow = ()=>{
         setTimeout(()=>{ //gera um atrazo na execução
             console.log(this.nome)
             console.log(this.nota)

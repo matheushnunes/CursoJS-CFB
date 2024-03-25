@@ -14,5 +14,4 @@ btn.addEventListener('click',()=>{
     win.document.write(tabela)
     win.document.write('</body>')
     win.print()
-    win.close() //fecha a janela win
 })

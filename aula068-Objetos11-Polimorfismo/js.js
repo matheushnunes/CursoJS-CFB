@@ -38,12 +38,13 @@ class Turbo{
 class CarroEspecial extends Carro{
     constructor(estagioTurbo){
         super(4,estagioTurbo)
-        this.tipoInfo = 2
+        this.tipoInfo = 1
         this.velMax = 300 + this.turbo
         this.nome = 'Carro especial'
     }
     info(){
         if(this.tipoInfo == 1){
+            console.log('tipo1')
             super.info()
         }else{
             console.log(`Nome....: ${this.nome}`)

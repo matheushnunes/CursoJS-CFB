@@ -1,7 +1,13 @@
 class CarroPadrão{
     constructor(){
-        if(this.constructor === CarroPadrão){
+        if(this.constructor === CarroPadrão){ //se tiver algum new CarroPadrão
             throw new TypeError('Esta class não pode ser instânciada')
+        }
+        if(this.ligar === undefined){
+            throw new TypeError('É obrigatorio a inplementação do mentodo "ligar()"')
+        }
+        if(this.desligar === undefined){
+            throw new TypeError('É obrigatorio a implementação do método "desligar()"')
         }
         this.portas = 4
         this.rodas = 4
@@ -24,6 +30,12 @@ class Carro extends CarroPadrão{
         }
         this.velMax += this.turbo
     }
+    ligar(){
+
+    }//caso não tenha esses metodos(mesmo que não façam nada), vai ser gerado o erro criado acima
+    desligar(){
+        
+    }
     info(){
         console.log(this.nome)
         console.log(this.turbo)
@@ -34,6 +46,7 @@ class Carro extends CarroPadrão{
         
         console.log('------------')
     }
+    
 }
 
 class Turbo{
@@ -48,6 +61,7 @@ class Turbo{
             this.pot = 100
         }
     }
+    
 }
 
 class CarroEspecial extends Carro{
@@ -67,12 +81,12 @@ class CarroEspecial extends Carro{
             console.log('------------')
         }
     }
+    
 }
 
 const c1 = new Carro(1,0)
 const c2 = new Carro(1,1)
 const c3 = new CarroEspecial(3)
-const c4 = new CarroPadrão()
 
 c1.info()
 c2.info()
